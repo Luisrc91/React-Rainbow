@@ -6,7 +6,7 @@ import './App.css';
 
 function App(){
     let [colors, setColors] = useState ( [
-        'violet', 'blue',
+        // 'violet', 'blue',
         // 'lightblue', 'green',
         // 'greenyellow', 'yellow',
         // 'orange', 'red'
