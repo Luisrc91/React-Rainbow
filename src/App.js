@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 // Make sure to import the component we just built:
-import ColorBlock from './components/ColorBlock'
-import ColorForm from './components/ColorForm'
+import ColorBlock from './components/ColorBlock';
+import ColorForm from './components/ColorForm';
+import './App.css';
 
 function App(){
     let [colors, setColors] = useState ( [
-        // 'violet', 'blue',
+        'violet', 'blue',
         // 'lightblue', 'green',
         // 'greenyellow', 'yellow',
         // 'orange', 'red'
@@ -22,9 +23,10 @@ function App(){
     }
 
     return (
-        <div className="App">
+        <div className="App gridContainer">
             {colors.map((color, i) => 
-        <ColorBlock key={i} color={color} />
+
+        <ColorBlock  key={i} color={color} />
     )}
 
             <ColorForm addColor ={addColor}/>

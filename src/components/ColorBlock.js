@@ -2,9 +2,11 @@ import React from 'react'
 
 function ColorBlock(props){
     return (
-        <div className="colorBlock"
-        style={{'backgroundColor': props.color}}>
-            <p>{props.color}</p>
+        <div >
+            <div className="colorBlock gridItem"
+                 style={{'backgroundColor': props.color}}>
+                <p className='colorProp'>{props.color}</p>
+            </div>
         </div>
     )
 }

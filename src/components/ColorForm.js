@@ -21,12 +21,12 @@ function ColorForm(props){
     }
 
     return (
-        <div>
+        <div className='colorInput'>
             <form onSubmit={handleSubmit}>
-                <input type="text" 
+                <input className='inputText' type="text" 
                 onChange={(e) => setInput(e.target.value)}
                 value={input} />
-                <button type="submit">Submit!</button>
+                <button className='buttonSubmit' type="submit">Submit!</button>
             </form>
         </div>
     )
